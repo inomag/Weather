@@ -13,8 +13,8 @@
 <body>
     <section id="weather">
         <div id="search">
-            <input id="location" placeholder="Enter Location"/>
-            <i id="searchbtn" class="fas fa-search"></i>
+            <input id="location" style="outline: none;" placeholder="Enter Location" value="North Lakhimpur"/>
+            <i id="searchbtn" type="submit" class="fas fa-search"></i>
         </div>
         <div class="weatherInfoTemp">
             <div class="info">
@@ -22,13 +22,14 @@
                     <p>Date & Day</p>
                     <p>Climate</p>
                     <div class="infoIcon">
-                        <i class="fas fa-sun"></i>                        <p>Temperature <sup>
+                        <i id="presentLogo" class="fas fa-sun"></i>
+                        <p id="presentTemp">Temperature <sup>
                             &#8451
                         </sup></p>
                     </div>
                 </div>
                 <div class="infoData">
-                    <p>Precipitation: </p>
+                    <p>Visibility: </p>
                     <p>Humidity: </p>
                     <p>Wind: </p>
                 </div>
@@ -46,7 +47,7 @@
                     <p>Max <sup>&#8451;</sup></p>
                     <p>Min <sup>&#8451;</sup></p>
                 </div>
-                <div class="day">
+                <!-- <div class="day">
                     <p>Day</p>
                     <i class="fas fa-cloud-sun-rain"></i>
                     <p>Max <sup>&#8451;</sup></p>
@@ -75,11 +76,12 @@
                     <i class="fas fa-cloud-sun-rain"></i>
                     <p>Max <sup>&#8451;</sup></p>
                     <p>Min <sup>&#8451;</sup></p>
-                </div>
-
+                </div> -->
             </div>
         </div>        
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
+
 </body>
 </html>
