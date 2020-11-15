@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     padding-bottom: 80px;
+    padding-top: 40px;
     /* display: flex; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -44,11 +45,36 @@ div.info {
 section.weatherInfoTemp {
     padding: 4rem;
 }
-h1 {
+input#location {
+    border: none;
+    border-bottom: 0.5px solid white;
+    color: white;
+    /* display: inline-block; */
+    background: transparent;
     text-align: center;
-    font-weight: 300;
-    font-size: 6rem;
-    letter-spacing: 0.4rem;
+    margin-right: 20px;
+    font-weight: 100;
+    font-size: 3rem;
+}
+#location input:focus{
+    outline: none;
+}
+div#search i {
+    font-size: 4rem;
+}
+div#search{
+    align-self: center;
+    display: inline-block;
+    background: rgba(140,27,121,0.3);
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
 }
 div#forecast {
     display: flex;
@@ -59,11 +85,13 @@ div#forecast {
 }
 div#forecast i{
     font-size: 6rem;
+    background-clip: text;
     background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 div#forecast p{
+    background-clip: text;
     background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
