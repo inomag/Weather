@@ -1,0 +1,16 @@
+@media screen and (max-width: 520px){
+    div#search input{
+        font-size: 3rem;
+    }
+    div#search i{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 450px){
+    div#search input{
+        font-size: 2rem;
+    }
+    div#search i{
+        font-size: 3rem;
+    }
+}
