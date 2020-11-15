@@ -1,0 +1,10 @@
+@media screen and (min-width: 850px){
+    #weather{
+        width: 90vw;
+    }
+    div#forecast{
+        text-align: center;
+        margin: inherit 2rem;
+    }
+    
+}
